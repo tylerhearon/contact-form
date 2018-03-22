@@ -9,35 +9,35 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
-<section class="contact pad-t-2 pad-b-2">
-  <div class="max-length">
-    <h1>Send us a sweet little note</h1>
-    <form class="push-0">
-      <div class="push">
-        <label for="name">Your Email</label>
-        <input id="name" required>
-      </div>
-      <div class="push">
-        <label for="email">Name</label>
-        <input id="email" type="email" placeholder="me@me.com" required>
-      </div>
-      <div class="push">
-        <label for="subject">Subject</label>
-        <select id="subject">
-          <option>Get a quote!</option>
-          <option>General Question</option>
-          <option>Just to talk</option>
-        </select>
-      </div>
-      <div class="push">
-        <label for="details">What's Up?</label>
-        <textarea id="details" required></textarea>
-      </div>
-      <div>
-        <button class="bbtn btn-light mega" type="submit">Send Message</button>
-      </div>
-    </form>
-  </div>
-</section>
+  <section class="contact pad-t-2 pad-b-2">
+    <div class="max-length">
+      <h1>Send us a sweet little note</h1>
+      <form class="push-0" method="POST" action="https://formspree.io/hear0063@algonquinlive.com">
+        <div class="push">
+          <label for="name">Name</label>
+          <input id="name" name="name" required>
+        </div>
+        <div class="push">
+          <label for="email">Your Email</label>
+          <input id="email" name="email" type="email" placeholder="me@me.com" required>
+        </div>
+        <div class="push">
+          <label for="subject">Subject</label>
+          <select id="subject" name="_subject">
+            <option>Get a quote!</option>
+            <option>General Question</option>
+            <option>Just to talk</option>
+          </select>
+        </div>
+        <div class="push">
+          <label for="details">What's Up?</label>
+          <textarea id="details" name="message" required></textarea>
+        </div>
+        <div>
+          <button class="btn btn-light mega" type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
 </body>
 </html>
